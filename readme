@@ -1,0 +1,7 @@
+Examples
+Create a Socks 4/5 proxy on port 1234:
+Import-Module .\Invoke-SocksProxy.psm1
+Invoke-SocksProxy -bindPort 1234
+Create a simple tcp port forward:
+Import-Module .\Invoke-SocksProxy.psm1
+Invoke-PortFwd -bindPort 33389 -destHost 127.0.0.1 -destPort 3389
